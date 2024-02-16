@@ -38,7 +38,7 @@ while 1:
             cv2.destroyAllWindows()
             cap.release()
             break
-        elif cv2.waitKey(1) == ord('q'): #按下字母q截下当前帧用于读取色域范围
+        elif cv2.waitKey(1) == ord('q'): #按下字母q使用默认图片用于读取色域范围
             cv2.destroyAllWindows()
             cap.release()
             break
