@@ -17,7 +17,7 @@ red_upper = np.array([179,255,255])
 while 1:
     # ret为是否找到图像， frame是帧本身
     ret, frame = cap.read()
-    frame = cv2.imread("F://3150.jpg")#测试代码是读取图片，如果要读取视频流可以将该句注释
+    frame = cv2.imread("3150.jpg")#测试代码是读取图片，如果要读取视频流可以将该句注释
     #frame = cv2.GaussianBlur(frame, (5, 5), 0)  # 高斯模糊
     hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)  # 转hsv
     mask = cv2.inRange(hsv, red_lower, red_upper)  # 生成掩膜
