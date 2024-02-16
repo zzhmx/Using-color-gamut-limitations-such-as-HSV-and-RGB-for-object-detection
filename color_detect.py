@@ -1,8 +1,6 @@
 #不可用于商用#
 
-from __future__ import division
 import cv2
-import time
 import numpy as np
 
 cap = cv2.VideoCapture(0)
@@ -15,7 +13,6 @@ cap.set(4, 720)
 # 设置红色的阙值
 red_lower = np.array([0,76,88])
 red_upper = np.array([179,255,255])
-#time.sleep(1)
 
 while 1:
     # ret为是否找到图像， frame是帧本身
