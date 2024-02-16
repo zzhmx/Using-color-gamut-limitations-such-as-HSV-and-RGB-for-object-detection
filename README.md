@@ -10,3 +10,14 @@ A commonly used method for object detection using traditional algorithms is to u
 2.在第一步返回的通道范围基础上进一步微调范围以达到最优效果--Fine_tuning_range.py
 3. Use the optimized range after fine-tuning as a prior condition to detect the video stream and return the position of the target - color_track.py
 3.使用微调后的最优范围作为先验条件以对视频流做检测，返回目标的位置--color_track.py
+
+## Environmental configuration环境配置
+```
+pip install opencv
+pip install numpy
+```
+
+## Code usage代码使用
+During the use of readhsv.py, the camera window pops up by default. To capture the current frame, you can press the spacebar and then perform operations on the captured video frame. Alternatively, you can use the provided image by pressing the 'q' key. To exit the program finally, you can press the 'esc' key. The key rules for Fine-tuning_range.py are the same. color_track.py uses default thresholds, which can be changed manually. Please note that the program defaults to detecting the built-in image. If you want to use the camera for real-time detection, you can comment out line 20 of the code.
+
+readhsv.py在使用过程中，默认弹出摄像头窗口，如果想要截取当前帧可以按下空格，然后可以在截下的视频帧上进行操作。也可以使用提供的图片，改为按下q键。最终推出程序可以按下esc键。Fine-tuning_range.py按键规则相同。color_track.py使用默认阈值，可以自行更改。注意程序默认对自带图片检测，如果要正常使用摄像头实时检测功能可将第20行代码注释。
