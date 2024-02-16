@@ -13,7 +13,7 @@ def Calibrate_size(lower,upper):
         return 0
 
 cap = cv2.VideoCapture(0)
-frame = cv2.imread("F://3151.jpg")
+frame = cv2.imread("3151.jpg")
 
 while 1:
     # ret为是否找到图像， frame_cap是帧本身
@@ -24,6 +24,10 @@ while 1:
         cv2.imshow('cap', frame_cap)
         if cv2.waitKey(1) == ord(' '): #按下空格截下当前帧用于色域筛选
             frame=frame_cap
+            cv2.destroyAllWindows()
+            cap.release()
+            break
+        elif cv2.waitKey(1) == ord('q'):  #按下q使用自带图片用于色域筛选
             cv2.destroyAllWindows()
             cap.release()
             break
@@ -55,7 +59,7 @@ while (1):
         cv2.imshow('capture', img_useful)
     else :
         print('三个通道最大值需要大于最小值/The maximum value of the three channels needs to be greater than the minimum value')
-    if cv2.waitKey(1) == 27 or cv2.waitKey(1) == ord('q'):
+    if cv2.waitKey(1) == 27:
         cv2.destroyAllWindows()
         break
 
