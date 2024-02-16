@@ -38,6 +38,10 @@ while 1:
             cv2.destroyAllWindows()
             cap.release()
             break
+        elif cv2.waitKey(1) == ord('q'): #按下字母q截下当前帧用于读取色域范围
+            cv2.destroyAllWindows()
+            cap.release()
+            break
 img2=img.copy()
 hsv_img = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
 hsv_roi = np.zeros((1, 2, 3))
