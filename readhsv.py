@@ -24,7 +24,7 @@ def getROI(event, x, y, flags, param):
         hsv_roi[:] = (h_min, s_min, v_min), (h_max, s_max, v_max)
         img2=img.copy()
 # 读取图像
-img = cv2.imread("F://3151.jpg")
+img = cv2.imread("3151.jpg")
 cap = cv2.VideoCapture(0)
 while 1:
     # ret为是否找到图像， frame_cap是帧本身
