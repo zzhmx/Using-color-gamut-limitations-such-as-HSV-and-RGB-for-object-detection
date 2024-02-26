@@ -18,6 +18,9 @@ pip install numpy
 ```
 
 ## Code usage代码使用
+具体博客在下面链接：
+[无人机竞赛常用目标检测方法--色块检测](https://blog.csdn.net/weixin_45398265/article/details/136264674)
+
 During the use of readhsv.py, the camera window pops up by default. To capture the current frame, you can press the spacebar and then perform operations on the captured video frame. Alternatively, you can use the provided image by pressing the 'q' key. To exit the program finally, you can press the 'esc' key. The key rules for Fine-tuning_range.py are the same. color_track.py uses default thresholds, which can be changed manually. Please note that the program defaults to detecting the built-in image. If you want to use the camera for real-time detection, you can comment out line 20 of the code.
 
 readhsv.py在使用过程中，默认弹出摄像头窗口，如果想要截取当前帧可以按下空格，然后可以在截下的视频帧上进行操作。也可以使用提供的图片，改为按下q键。最终推出程序可以按下esc键。Fine-tuning_range.py按键规则相同。color_track.py使用默认阈值，可以自行更改。注意程序默认对自带图片检测，如果要正常使用摄像头实时检测功能可将第20行代码注释。
